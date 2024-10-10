@@ -1,5 +1,5 @@
-# docker build . -t websmurf/tauri-builder:1.0.1
-# docker push websmurf/tauri-builder:1.0.1
+# docker build . -t websmurf/tauri-builder:1.0.2
+# docker push websmurf/tauri-builder:1.0.2
 ARG NODE_VERSION=20.18.0
 
 FROM node:${NODE_VERSION}-bookworm-slim
@@ -16,4 +16,5 @@ RUN apt-get -qq -y update \
     # clean up
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+ENTRYPOINT []
 CMD ["bash"]

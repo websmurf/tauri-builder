@@ -5,7 +5,7 @@
 
 # Supported tags and respective Dockerfile links
 
-* [1.0.1](https://github.com/websmurf/beanstalkd-docker/blob/main/Dockerfile)
+* [1.0.2](https://github.com/websmurf/beanstalkd-docker/blob/main/Dockerfile)
 
 # Quick reference (cont.)
 
