@@ -26,7 +26,7 @@ Then run the following commands to build the windows version of your Tauri appli
 
     rm -Rf node_modules
     yarn install
-    export XWIN_CACHE_DIR=/io/.cache
+    export XWIN_CACHE_DIR=/tmp/.cache
     yarn tauri build --runner cargo-xwin --target x86_64-pc-windows-msvc
 
 # Known issues
