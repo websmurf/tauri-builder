@@ -1,5 +1,5 @@
-# docker build . -t websmurf/tauri-builder:1.0.0
-# docker push websmurf/tauri-builder:1.0.0
+# docker build . -t websmurf/tauri-builder:1.0.1
+# docker push websmurf/tauri-builder:1.0.1
 ARG NODE_VERSION=20.18.0
 
 FROM node:${NODE_VERSION}-bookworm-slim
@@ -15,3 +15,5 @@ RUN apt-get -qq -y update \
     && /root/.cargo/bin/cargo install --locked cargo-xwin \
     # clean up
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+CMD ["bash"]
