@@ -18,11 +18,17 @@ This container is used to build windows versions of Tauri applications through d
 
 # How to use this image
 
-```
-docker run --name beanstalkd websmurf/beanstalkd:1.13-alpine-3.20
-````
+Go to the root folder of your Tauri project en run the following command to enter the container:
 
-## Exposing ports
-```
-docker run --name beanstalkd -p 11300:11300 websmurf/beanstalkd:1.13-alpine-3.20
-```
+    docker run --rm -it -v $(pwd):/io -w /io websmurf/tauri-builder:1.0.0 bash
+
+Then run the following commands to build the windows version of your Tauri application:
+
+    rm -Rf node_modules
+    yarn install
+    yarn tauri build --runner cargo-xwin --target x86_64-pc-windows-msvc
+
+# Known issues
+
+Sometimes the build will fail with the error "Error: response body closed before all bytes were read", 
+this means that downloading the SDK data fails. You can simply retry the build until it is successful.
