@@ -21,7 +21,7 @@ This container is used to build windows versions of Tauri applications through d
 
 Go to the root folder of your Tauri project en run the following command to enter the container:
 
-    docker run --rm -it -v $(pwd):/io -w /io websmurf/tauri-builder:1.0.0 bash
+    docker run --rm -it -v $(pwd):/io -w /io websmurf/tauri-builder:1.1.0 bash
 
 Then run the following commands to build the windows version of your Tauri application:
 
