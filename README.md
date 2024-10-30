@@ -5,7 +5,8 @@
 
 # Supported tags and respective Dockerfile links
 
-* [1.0.3](https://github.com/websmurf/beanstalkd-docker/blob/main/Dockerfile)
+* [1.0.3](https://github.com/websmurf/tauri-builder/blob/9a1ab3a8005ec39110ffa26ed37ea31cd0f36ff8/Dockerfile)
+* [1.1.0](https://github.com/websmurf/tauri-builder/blob/main/Dockerfile)
 
 # Quick reference (cont.)
 

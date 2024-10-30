@@ -1,5 +1,5 @@
-# docker buildx build --platform linux/amd64,linux/arm64 . -t websmurf/tauri-builder:1.0.3 --push
-ARG NODE_VERSION=20.18.0
+# docker buildx build --platform linux/amd64,linux/arm64 . -t websmurf/tauri-builder:1.1.0 --push
+ARG NODE_VERSION=22.11.0
 
 FROM node:${NODE_VERSION}-bookworm-slim
 
